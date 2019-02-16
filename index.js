@@ -15,11 +15,10 @@ app.use(morgan('dev'));
 app.use(express.json());
 app.use(express.static('public'));
 axios.get('https://launchlibrary.net/1.4/launch?next=1000&mode=verbose')
-  .then((response) => {
-    return parseData(response);
-  })
-  .then((parsedData) => {
-    app.use('/api', apiRouter(parsedData));
+  .then((data) => {
+    const launchData = parseData.launchData(data);
+    const rocketData = parseData.rocketData(data);
+    app.use('/api', apiRouter(launchData, rocketData));
 
     // The 'catchall' handler: for any request that doesn't
     // match one above, send back React's index.html file.

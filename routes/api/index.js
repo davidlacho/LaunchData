@@ -1,10 +1,15 @@
 const express = require('express');
+
 const router = express.Router();
 
 // API endpoints
-module.exports = (data) => {
+module.exports = (launchData, rocketData) => {
   router.get('/launch', (req, res) => {
-    res.json(data);
+    res.json(launchData);
+  });
+
+  router.get('/launch/:id', (req, res) => {
+    res.json(rocketData[req.params.id]);
   });
 
   router.get('*', (req, res) => {
