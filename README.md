@@ -28,7 +28,7 @@ Provide a link to your repo with a README file that has instructions on how to g
 
 -   Clone this repository
     `git clone https://github.com/fiveache/LaunchData.git`
--   In the root directory, run `npm start`. It will install all necessary node modules for the client side.
+-   In the root directory of this project, run `npm start`. It will install all necessary node modules for the client side.
 -   Preview the project at <http://localhost:5000/>.
 
 ### API
