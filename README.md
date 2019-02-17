@@ -1,14 +1,8 @@
-# Finn AI Code Challenge
+# Launch Data (Finn AI Code Challenge)
 
-This is an exercise to help us get a sense of how you think. Don't worry about knowing the latest trendy tools, but don't be shy to get creative.
+## Product description
 
-Your submission will be reviewed by a member of our engineering team, who will check the implementation for readability, simplicity, durability, and functional completeness.
-
-For bonus points, use standard ES6 syntax where appropriate. E.g. classes, destructuring assignment, and promises (or async-await).
-
-## Step 0: Product description
-
-We are going to build a small tool that lets users view upcoming space launch missions around the world, with some details about each one:
+Launch Data is a small tool that lets users view upcoming space launch missions around the world, with some details about each one:
 
 - Name of rocket being launched (e.g. "Falcon 9")
 - Space agency responsible for the launch (e.g. "NASA")
@@ -16,22 +10,31 @@ We are going to build a small tool that lets users view upcoming space launch mi
 - Time of launch
 - Wikipedia links for each launch, agency and rocket
 
-## Step 1: Backend
+### Technical Specifications
 
-Create a REST API to serve the data to clients.
+- Front-End: React, Material UI
+- Back-End: NodeJS, Express, with data persisted in memory on server start from [LaunchLibrary](https://launchlibrary.net) API.
 
-- Import raw data from the latest version of this API: https://launchlibrary.net
-- Can be done when the server starts or as part of the request cycle, or a mix.
-- The data may be persisted or remain in memory as you wish
-- Use any web "microframework" in JavaScript, Python or Ruby (e.g. Express, Flask, Sinatra)
-- Try to avoid general language extension utilities like async or lodash
-
-## Step 2: Frontend
-
-Display the required data in an intuitive way for the user.
-
-- Use any front end libraries except jQuery
-
-## Step 3: Review
+## Knowledge Demonstrated
 
 Provide a link to your repo with a README file that has instructions on how to get the project running.
+* ES6 Syntax
+* Classes (React)
+* Destructuring Assignment
+* Promises (Axios)
+* Modularization of API, Data Parsers
+
+### Getting Started
+
+-   Clone this repository
+    `git clone https://github.com/fiveache/LaunchData.git`
+-   In the root directory, run `npm start`. It will install all necessary node modules for the client side.
+-   Preview the project at <http://localhost:5000/>.
+
+### API
+- You can view all launch data at <http://localhost:5000/api/launch>
+- You can view specific rocket launch data at <http://localhost:5000/api/launch/[RocketID]>.
+
+### Screenshots
+
+!["Screenshot"]()
