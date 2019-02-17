@@ -15,7 +15,6 @@ class App extends Component {
     this.state = {
       rocketData : [],
       currentRocket : null,
-      err: null,
     }
   }
 
@@ -27,9 +26,7 @@ class App extends Component {
       });
     })
     .catch((err) => {
-      this.setState({
-        err: err,
-      })
+      console.log(err);
     })
   }
 
