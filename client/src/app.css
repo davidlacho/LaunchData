@@ -1,5 +1,6 @@
 a {
   padding-left: 4px;
+  text-decoration: none;
 }
 .rockets-container {
   display: flex;
