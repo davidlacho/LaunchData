@@ -35,6 +35,6 @@ Provide a link to your repo with a README file that has instructions on how to g
 - You can view all launch data at <http://localhost:5000/api/launch>
 - You can view specific rocket launch data at <http://localhost:5000/api/launch/[RocketID]>.
 
-### Screenshots
+### Screenshot
 
 !["Screenshot"](https://github.com/fiveache/LaunchData/blob/master/docs/screenshot.png?raw=true)
