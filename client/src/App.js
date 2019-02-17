@@ -44,8 +44,8 @@ class App extends Component {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-          {rocket.name}
-          {rocket.rocketWiki && <a href={rocket.rocketWiki} title={`${rocket.agency} wiki`} rel="noopener noreferrer" target="_blank">(Wiki)</a>}
+            {rocket.name}
+            {rocket.rocketWiki && <a href={rocket.rocketWiki} title={`${rocket.agency} wiki`} rel="noopener noreferrer" target="_blank">(Wiki)</a>}
           </Typography>
           <Typography component="p">
             Launch Agency: {rocket.agency || 'Unknown'}
@@ -59,7 +59,7 @@ class App extends Component {
             Launch Time: {(rocket.launchTime && <Moment fromNow>{rocket.launchTime}</Moment>) || 'Unknown'}
           </Typography>
         </CardContent>
-    </Card>
+      </Card>
     ));
   }
 
