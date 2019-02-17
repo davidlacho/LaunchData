@@ -1,0 +1,21 @@
+a {
+  padding-left: 4px;
+}
+.rockets-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.rocket-card {
+  width: 30%;
+  margin: 10px;
+}
+
+.rocket-card-img {
+  height:200px;
+}
+
+.rocket-card-img img {
+  max-height:200px;
+}

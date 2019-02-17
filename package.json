@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev-start": "cd client && npm install && npm run build && cd .. && npm install && nodemon index.js",
-    "dev-start-ni": "cd client && npm run build && cd .. && nodemon index.js"
+    "start": "cd client && npm ci && npm run build && cd .. && npm ci && nodemon index.js"
   },
   "repository": {
     "type": "git",
