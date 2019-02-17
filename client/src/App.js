@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import Moment from 'react-moment';
 import Card from '@material-ui/core/Card';
 import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
@@ -44,18 +45,18 @@ class App extends Component {
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
           {rocket.name}
-          {rocket.rocketWiki && <a href={rocket.rocketWiki} title={`${rocket.agency} wiki`}>(Wiki)</a>}
+          {rocket.rocketWiki && <a href={rocket.rocketWiki} title={`${rocket.agency} wiki`} rel="noopener noreferrer" target="_blank">(Wiki)</a>}
           </Typography>
           <Typography component="p">
             Launch Agency: {rocket.agency || 'Unknown'}
-            {rocket.agencyWiki && <a href={rocket.agencyWiki} title={`${rocket.agency} wiki`}>(Wiki)</a>}
+            {rocket.agencyWiki && <a href={rocket.agencyWiki} title={`${rocket.agency} wiki`} rel="noopener noreferrer" target="_blank">(Wiki)</a>}
           </Typography>
           <Typography component="p">
             Launch Location: {rocket.location || 'Unknown'}
-            {rocket.launchWiki && <a href={rocket.launchWiki} title={`${rocket.launchWiki} wiki`}>(Wiki)</a>}
+            {rocket.launchWiki && <a href={rocket.launchWiki} title={`${rocket.launchWiki} wiki`} rel="noopener noreferrer" target="_blank">(Wiki)</a>}
           </Typography>
           <Typography component="p">
-            Launch Time: {rocket.launchTime || 'Unknown'}
+            Launch Time: {(rocket.launchTime && <Moment fromNow>{rocket.launchTime}</Moment>) || 'Unknown'}
           </Typography>
         </CardContent>
     </Card>
