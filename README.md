@@ -17,7 +17,6 @@ Launch Data is a small tool that lets users view upcoming space launch missions 
 
 ## Knowledge Demonstrated
 
-Provide a link to your repo with a README file that has instructions on how to get the project running.
 * ES6 Syntax
 * Classes (React)
 * Destructuring Assignment
