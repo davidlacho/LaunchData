@@ -33,7 +33,7 @@ Provide a link to your repo with a README file that has instructions on how to g
 
 ### API
 - You can view all launch data at <http://localhost:5000/api/launch>
-- You can view specific rocket launch data at <http://localhost:5000/api/launch/[RocketID]>.
+- You can view specific rocket launch data at `http://localhost:5000/api/launch/{RocketID}`.
 
 ### Screenshot
 
